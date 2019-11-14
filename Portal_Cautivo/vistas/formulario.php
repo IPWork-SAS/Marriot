@@ -55,7 +55,7 @@
             <div class="col-sm-12 my-auto">
                 <div class="card"> 
                     <div class="logo">
-                        <img src="../img/logo.jpg" alt="">
+                        <img src="../img/logo_1.png" alt="">
                         <p><?= $lang['titulo_form'];?></p>
                     </div>
                     <form class="formulario" action="../controladores/formulario_controller.php" method="post">

@@ -74,7 +74,7 @@ html, body {
 }
 
 .logo img {
-    width: 100px;
+    width: 250px;
     margin: 1%;
 }
 
@@ -93,7 +93,6 @@ html, body {
     .icono-idioma img {
         width: 3rem;
     }
-    
 }
 
 @media (min-width: 992px) {
@@ -104,7 +103,14 @@ html, body {
     .icono-idioma img {
         width: 3rem;
     }
+
+    .logo img {
+        width: 350px;
+        margin: 1%;
+    } 
 }
+
+
 
 
 

@@ -11,4 +11,5 @@
         public function validarMac($mac = '') {
             return $this::retrieveBymac_cliente($mac, Orm::FETCH_ONE);
         }
+
     }
