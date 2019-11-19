@@ -5,11 +5,24 @@
 
         protected static    
             $database = 'portal_oxohotel',
-            $table = 'publicidad_a_2019_campania',
+            $table = 'portal_cautivo_principal',
             $pk = 'id';
 
         public function validarMac($mac = '') {
             return $this::retrieveBymac_cliente($mac, Orm::FETCH_ONE);
         }
+
+        public function getNameUserByMac($mac = '') {
+            $user = $this::retrieveBymac_cliente($mac, Orm::FETCH_ONE);
+            if(isset($user)) {
+                return $user->nombre;
+            } else  {
+                return '';
+            }            
+        }
+
+        public function getUserByMac($mac = '') {
+            return $this::retrieveBymac_cliente($mac, Orm::FETCH_ONE);
+        } 
 
     }

@@ -19,6 +19,7 @@
         "titulo_banner" => "Connect and enjoy our WIFI network.",
         "btn_conectar" => "Conect",
         "error_url" => "Ops! Something went wrong. Contact the network administrator.",
-        "error_licencia" => "Ops! The licence has expired. Contact the network administrator."
+        "error_licencia" => "Ops! The licence has expired. Contact the network administrator.",
+        "bienvenido_usuario" => "Welcome "
     );
 ?>

@@ -1,4 +1,5 @@
 <?php
+    include_once "../db/campania.class.php";
     session_start();
 
     if (isset($_REQUEST['i'])) {
@@ -25,7 +26,14 @@
         $url = 'http://'.$_SESSION['zd_ip'].':'.$port.'/SubscriberPortal/hotspotlogin';
     } else {
         $url = 'http://'.$_SESSION['ip_ap'].':'.$port.'/SubscriberPortal/hotspotlogin';
-    }    
+    }   
+    
+    if(isset($_SESSION['mac_cliente'])) {
+        $campania = new Campania();
+        $nombre = $campania->getNameUserByMac($_SESSION['mac_cliente']);
+    } else {
+        $nombre = 'a nuestra red WIFI';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +81,7 @@
                 <div class="card"> 
                     <div class="logo">
                         <img src="../img/logo_1.png" alt="">
-                        <p><?=$lang['titulo_banner']?></p>
+                        <p><?=$lang['bienvenido_usuario'].$nombre.'!'?></p>
                     </div>
                     <div class="container-carrusel">
                         <div class="slider carrousel">

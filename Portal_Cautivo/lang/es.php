@@ -19,6 +19,7 @@
         "titulo_banner" => "Conéctate y disfruta de nuestra red WIFI.",
         "btn_conectar" => "Conectar",
         "error_url" => "Ops! Algo salio mal. Pongase en contacto con el administrador de la red.",
-        "error_licencia" => "Ops! La licencia ha caducado. Pongase en contacto con el administrador de la red."
+        "error_licencia" => "Ops! La licencia ha caducado. Pongase en contacto con el administrador de la red.",
+        "bienvenido_usuario" => "Bienvenido "
     );
 ?>
